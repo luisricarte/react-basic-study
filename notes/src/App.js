@@ -1,8 +1,7 @@
+import { IndexPage } from "./Pages/BasicPage/IndexPage";
 function App() {
   return (
-    <div className="App">
-      teste
-    </div>
+    <IndexPage/>
   );
 }
 
