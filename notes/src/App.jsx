@@ -1,5 +1,6 @@
 import { IndexPage } from "./Pages/BasicPage/IndexPage";
-function App() {
+
+const App = () => {
   return (
     <IndexPage/>
   );

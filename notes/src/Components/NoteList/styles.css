@@ -1,0 +1,19 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.titleInput {
+    background-color:#bdbdbd;
+    border-radius: 1rem;
+    border: 0;
+    padding-Left:1rem;
+    padding-Top:0.5rem; 
+    padding-Bottom:0.5rem;
+    width: 40%;
+}
+
+.descriptionInput {
+    
+}
