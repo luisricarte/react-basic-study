@@ -11,9 +11,30 @@
     padding-Left:1rem;
     padding-Top:0.5rem; 
     padding-Bottom:0.5rem;
-    width: 40%;
+    width: 50%;
 }
 
 .descriptionInput {
-    
+    background-color:#bdbdbd; 
+    border-Radius: 1rem; 
+    border: 0; 
+    padding-Left:1rem; 
+    padding-Top:0.5rem; 
+    padding-Bottom:0.5rem;
+    width: 50%;
+}
+
+.button {
+    margin-top: 1rem;
+    width: 35%;
+    border: 0;
+    background-color: #000;
+    color: #fff;
+
+    border-radius: 0.5rem;
+    border: 1px solid ;
+    padding: 0.6rem;
+}
+.button:hover {
+    background: #a68b02;
 }
