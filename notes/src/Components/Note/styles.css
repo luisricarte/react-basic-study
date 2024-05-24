@@ -1,12 +1,17 @@
 .cardContainer{
     display: grid;
     border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px ;
+    box-shadow: 2px 4px 4px 1px #bdbdbd ;
     width: 45%;
+    transition: transform 0.3s ease;
     height: auto;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    
+    background-color: #eeeeeedc;
+}
+.cardContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 8px 12px 4px #bdbdbd;
 }
 .cardTitle{
     font-size: 24px;
