@@ -14,7 +14,13 @@ export const IndexPage = () => {
                 <h1 style={{fontFamily:'Roboto',fontWeight: '400',fontSize: '38px'}}>
                     Lista de Notas
                 </h1>
-                <Note/>
+                {Array.of(1,1,1,1,1,1,1).map((card,index) => {
+                    return(
+                        <Note title={'Título de teste!'} description={'uma breve descrição que poderia ser adicionada ao card, entende?'}/>
+                    )
+                    
+                })}
+                
             </div>
         </div>
     )

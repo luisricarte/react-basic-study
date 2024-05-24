@@ -1,13 +1,12 @@
 import React from "react"
+import "./styles.css";
 
-const Note = () => {
+const Note = ({title, description, ...props}) => {
     return (
-        <li>teste
-            <ul>
-                teste
-            </ul>
-           
-        </li>
+        <div className="cardContainer">
+            <span className="cardTitle">{title}</span>
+            <p className="cardDescription">{description}</p>
+        </div>
     )
 }
 
