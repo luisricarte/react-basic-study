@@ -1,11 +1,17 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import styles from './styles.css';
 import NewNote from '../../Components/NewNote/index';
 import Note from '../../Components/Note/index';
-class IndexPage extends Component {
 
+class IndexPage extends Component {
+    constructor(props) {
+        super(props);
+        this.notes = [];
+    }
     createNote(title, description) {
-        console.log(title, description)
+        const noteObject = {title:title, description:description}
+        console.log(noteObject)
+        this.notes?.add(noteObject);
     }
 
     render() {
@@ -19,9 +25,10 @@ class IndexPage extends Component {
                         <h1 style={{fontFamily:'Roboto',fontWeight: '400',fontSize: '38px'}}>
                             Lista de Notas
                         </h1>
-                        {Array.of(1,1,1).map((card,index) => {
+                        
+                        {this.notes?.map((cardNote,index) => {
                             return(
-                                <Note title={'Título de teste!'} description={'uma breve descrição que poderia ser adicionada ao card, entende?'}/>
+                                <Note title={cardNote.title} description={cardNote.description}/>
                             )
                         })}
                         
